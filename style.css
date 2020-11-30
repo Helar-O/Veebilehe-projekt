@@ -22,7 +22,7 @@ belowtitle {
 }
 
 maintext {
-	color:blue;
+	color:black;
 	font-family:arial;
 	font-size:15px;
 	text-align:left;
@@ -31,8 +31,8 @@ maintext {
 }
 
 a {
-	background-color: red;
-	box-shadow: 0 5px 0 darkred;
+	background-color: #505050;
+	box-shadow: 0 5px 0 #212121;
 	color: white;
 	padding: 1em 1.5em;
 	position: relative;
@@ -42,7 +42,7 @@ a {
 }
 
 a:hover {
-	background-color: #ce0606;
+	background-color: #3f3f3f;
 	cursor: pointer;
 }
 
@@ -60,4 +60,42 @@ body {
     background-image: url(img/background.jpg);
     background-repeat: no-repeat;
     background-position: top;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
