@@ -1,5 +1,6 @@
 div {
-	max-width: 400px;
+	left: 10px;
+	max-width: 1080px;
 	min-width: 100px;
 }
 
@@ -24,7 +25,7 @@ belowtitle {
 maintext {
 	color:black;
 	font-family:arial;
-	font-size:15px;
+	font-size:25px;
 	text-align:left;
 	position: absolute;
 	top: 800px;
